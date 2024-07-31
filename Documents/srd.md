@@ -134,15 +134,15 @@ requirements, including user interactions, system behaviors, and constraints.
 
 #### 2.4.1 Audio Settings
 
--   Adjusts music and sound effects volume.
+-   **2.4.1 Music and Sound Effects:** Adjusts music and sound effects volume.
 
 #### 2.4.2 Graphics Settings
 
--   Adjusts graphics quality and resolution.
+-   **2.4.2 Graphics Settings:** Adjusts graphics quality and resolution.
 
 #### 2.4.3 Control Settings
 
--   Customizes key bindings and control schemes.
+-   **2.4.3 Control Settings:** Customizes key bindings and control schemes.
 
 ## 3. Non-Functional Requirements
 
