@@ -7,10 +7,14 @@
     -   [1.2 Scope](#12-scope)
     -   [1.3 Definitions](#13-definitions)
 -   [2. Functional Requirements](#2-functional-requirements)
-    -   [2.1 Main Menu (UI)](#21-main-menu-ui)
-        -   [2.1.1 New Game](#211-new-game)
-        -   [2.1.2 Load Game](#212-load-game)
-        -   [2.1.3 Options](#213-options)
+    -   [2.1 User Interfaces (UI)](#21-user-interfaces-ui)
+        -   [2.1.1 Main Menu](#211-main-menu)
+        -   [2.1.2 New Game](#212-new-game)
+        -   [2.1.3 Load Game](#213-load-game)
+        -   [2.1.4 Options Menu](#214-options-menu)
+            -   [2.1.4.1 Audio Settings](#2141-audio-settings)
+            -   [2.1.4.2 Graphics Settings](#2142-graphics-settings)
+            -   [2.1.4.3 Control Settings](#2143-control-settings)
     -   [2.2 Game Play (CORE)](#22-game-play-core)
         -   [2.2.1 Game State Management](#221-game-state-management)
         -   [2.2.2 Menu Layer](#222-menu-layer)
@@ -19,10 +23,6 @@
     -   [2.3 Save/Load System (DB)](#23-saveload-system-db)
         -   [2.3.1 Save Game](#231-save-game)
         -   [2.3.2 Load Game](#232-load-game)
-    -   [2.4 Options Menu](#24-options-menu)
-        -   [2.4.1 Audio Settings](#241-audio-settings)
-        -   [2.4.2 Graphics Settings](#242-graphics-settings)
-        -   [2.4.3 Control Settings](#243-control-settings)
 -   [3. Non-Functional Requirements](#3-non-functional-requirements)
     -   [3.1 Performance](#31-performance)
     -   [3.2 Usability](#32-usability)
@@ -32,21 +32,17 @@
 -   [4. System Architecture](#4-system-architecture)
     -   [4.1 High-Level Architecture](#41-high-level-architecture)
     -   [4.2 Data Management](#42-data-management)
--   [5. User Interface Design](#5-user-interface-design)
-    -   [5.1 Main Menu](#51-main-menu)
-    -   [5.2 In-Game UI](#52-in-game-ui)
-    -   [5.3 Options Menu](#53-options-menu)
--   [6. Development and Testing](#6-development-and-testing)
-    -   [6.1 Development](#61-development)
-    -   [6.2 Testing](#62-testing)
--   [7. Deployment](#7-deployment)
-    -   [7.1 Distribution](#71-distribution)
-    -   [7.2 Installation](#72-installation)
--   [8. Documentation](#8-documentation)
-    -   [8.1 User Documentation](#81-user-documentation)
-    -   [8.2 Developer Documentation](#82-developer-documentation)
--   [9. Glossary](#9-glossary)
--   [10. References](#10-references)
+-   [5. Development and Testing](#5-development-and-testing)
+    -   [5.1 Development](#51-development)
+    -   [5.2 Testing](#52-testing)
+-   [6. Deployment](#6-deployment)
+    -   [6.1 Distribution](#61-distribution)
+    -   [6.2 Installation](#62-installation)
+-   [7. Documentation](#7-documentation)
+    -   [7.1 User Documentation](#71-user-documentation)
+    -   [7.2 Developer Documentation](#72-developer-documentation)
+-   [8. Glossary](#8-glossary)
+-   [9. References](#9-references)
 
 ## 1. Introduction
 
@@ -87,19 +83,37 @@ requirements, including user interactions, system behaviors, and constraints.
     -   The game must perform in an efficient manner and meet the specifications most common users
         individual hardware.
 
-### 2.1 Main Menu (UI)
+### 2.1 User Interfaces (UI)
 
-#### 2.1.1 New Game
+#### 2.1.1 Main Menu
+
+-   Layout and options for starting a new game, loading a saved game, and accessing settings.
+
+#### 2.1.2 New Game
 
 -   Starts a new game session and loads the initial game scene.
+    -   INewGame Class:
+        -   TBD
 
-#### 2.1.2 Load Game
+#### 2.1.3 Load Game
 
 -   Allows the user to load a previously saved game.
 
-#### 2.1.3 Options
+#### 2.1.4 Options Menu
 
--   Provides access to settings such as audio volume, graphics quality, and controls.
+Provides access to settings such as audio volume, graphics quality, and controls.
+
+##### 2.1.4.1 Audio Settings
+
+-   Adjusts music and sound effects volume.
+
+##### 2.1.4.2 Graphics Settings
+
+-   Adjusts graphics quality and resolution.
+
+##### 2.1.4.3 Control Settings
+
+-   Customizes key bindings and control schemes.
 
 ### 2.2 Game Play (CORE)
 
@@ -119,6 +133,12 @@ requirements, including user interactions, system behaviors, and constraints.
 #### 2.2.4 Tactical Layer
 
 -   The layer where missions take place, from start of combat to end of combat.
+    -   Individual Actions for friendlies
+    -   Individual Actions for enemies
+        -   TakeTurn Class:
+            -   Process unit action selection
+            -   Deduct action cost
+            -   Cycle to next unit
 
 ### 2.3 Save/Load System (DB)
 
@@ -129,20 +149,6 @@ requirements, including user interactions, system behaviors, and constraints.
 #### 2.3.2 Load Game
 
 -   Loads a saved game state from a file.
-
-### 2.4 Options Menu
-
-#### 2.4.1 Audio Settings
-
--   **2.4.1 Music and Sound Effects:** Adjusts music and sound effects volume.
-
-#### 2.4.2 Graphics Settings
-
--   **2.4.2 Graphics Settings:** Adjusts graphics quality and resolution.
-
-#### 2.4.3 Control Settings
-
--   **2.4.3 Control Settings:** Customizes key bindings and control schemes.
 
 ## 3. Non-Functional Requirements
 
@@ -190,57 +196,43 @@ requirements, including user interactions, system behaviors, and constraints.
     -   **LoadGame:** Loading games happens here.
 -   **User Settings:** Managed through configuration files or databases.
 
-## 5. User Interface Design
+## 5. Development and Testing
 
-### 5.1 Main Menu
-
--   Layout and options for starting a new game, loading a saved game, and accessing settings.
-
-### 5.2 In-Game UI
-
--   Display of game status, controls, and feedback.
-
-### 5.3 Options Menu
-
--   Controls for adjusting audio, graphics, and game controls.
-
-## 6. Development and Testing
-
-### 6.1 Development
+### 5.1 Development
 
 -   Follow coding standards and best practices for C# and Unity and overall game design.
 -   Use version control for source code management.
 
-### 6.2 Testing
+### 5.2 Testing
 
 -   Perform unit testing, integration testing, and user acceptance testing.
 
-## 7. Deployment
+## 6. Deployment
 
-### 7.1 Distribution
+### 6.1 Distribution
 
 -   The game will be distributed through digital platforms only. Speculative distribution platforms
     are itch.io, Steam, and Epic Games.
 
-### 7.2 Installation
+### 6.2 Installation
 
 -   Provide clear instructions for installing and running the game.
 
-## 8. Documentation
+## 7. Documentation
 
-### 8.1 User Documentation
+### 7.1 User Documentation
 
 -   Guides and instructions for playing the game and using its features.
 
-### 8.2 Developer Documentation
+### 7.2 Developer Documentation
 
 -   Technical documentation for maintaining and extending the game.
 
-## 9. Glossary
+## 8. Glossary
 
 -   **Gameplay:** The interactive experience provided by the game.
 -   **UI (User Interface):** The graphical layout and elements used for user interaction.
 
-## 10. References
+## 9. References
 
 -   References to any documents, tools, or external resources used in the development of the game.
