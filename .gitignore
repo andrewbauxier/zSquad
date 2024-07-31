@@ -35,6 +35,7 @@ ProjectSettings/
 .vsconfig
 zSquad.sln
 create_structure.sh
+gitShowcase.md
 
 # Ignore the following folders
 Assets/AssetStoreTools*
