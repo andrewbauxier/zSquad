@@ -1,0 +1,143 @@
+Our data 
+
+Issue Id,Issue Type,Summary,Parent
+T1,Story,T1.1 Create Main Menu UI,
+S1,Sub-task,S1.1.1 Design layout for starting a new game,T1
+S2,Sub-task,S1.1.2 Design layout for loading a saved game,T1
+S3,Sub-task,S1.1.3 Design layout for accessing settings,T1
+T2,Story,T1.2 Implement New Game Functionality,
+S4,Sub-task,S1.2.1 Create INewGame Class,T2
+S5,Sub-task,S1.2.2 Develop functionality to start a new game session,T2
+S6,Sub-task,S1.2.3 Load initial game scene,T2
+T3,Story,T1.3 Implement Load Game Functionality,
+S7,Sub-task,S1.3.1 Develop functionality to load a previously saved game,T3
+T4,Story,T1.4 Develop Options Menu,
+S8,Sub-task,S1.4.1 Create audio settings for adjusting music and sound effects volume,T4
+S9,Sub-task,S1.4.2 Create graphics settings for adjusting quality and resolution,T4
+S10,Sub-task,S1.4.3 Create control settings for customizing key bindings and control schemes,T4
+T5,Story,T2.1 Develop Game State Management,
+S11,Sub-task,S2.1.1 Manage transitions between Menu/basebuilding/tactical layers,T5
+T6,Story,T2.2 Develop Menu Layer,
+S12,Sub-task,S2.2.1 Implement menu operations (saving/loading/navigating),T6
+T7,Story,T2.3 Develop Command Layer,
+S13,Sub-task,S2.3.1 Implement base upgrade/unit upgrade/strategic actions/and mission selection,T7
+T8,Story,T2.4 Develop Tactical Layer,
+S14,Sub-task,S2.4.1 Implement mission management (combat start to end),T8
+S15,Sub-task,S2.4.2 Implement friendlies' actions,T8
+S16,Sub-task,S2.4.3 Implement enemies' actions,T8
+S17,Sub-task,S2.4.3.1 Process unit action selection,S16
+S18,Sub-task,S2.4.3.2 Deduct action cost,S16
+S19,Sub-task,S2.4.3.3 Cycle to next unit,S16
+T9,Story,T3.1 Implement Save Game Functionality,
+S20,Sub-task,S3.1.1 Develop functionality to save the current state of the game to a file,T9
+T10,Story,T3.2 Implement Load Game Functionality,
+S21,Sub-task,S3.2.1 Develop functionality to load a saved game state from a file,T10
+T11,Story,T4.1 Ensure Game Performance,
+S22,Sub-task,S4.1.1 Optimize game to run smoothly on standard hardware,T11
+T12,Story,T4.2 Enhance Usability,
+S23,Sub-task,S4.2.1 Design intuitive user interface,T12
+S24,Sub-task,S4.2.2 Provide clear instructions and feedback,T12
+T13,Story,T4.3 Ensure Compatibility,
+S25,Sub-task,S4.3.1 Ensure compatibility with Windows 10 and 11,T13
+S26,Sub-task,S4.3.2 Plan for compatibility with other OSes (macOS/Linux),T13
+T14,Story,T4.4 Ensure Reliability,
+S27,Sub-task,S4.4.1 Implement error handling and meaningful error messages,T14
+T15,Story,T4.5 Implement Security Measures,
+S28,Sub-task,S4.5.1 Protect user data and save files against unauthorized access,T15
+T16,Story,T5.1 Design System Architecture,
+S29,Sub-task,S5.1.1 Define frontend (UI/scenes/interactions),T16
+S30,Sub-task,S5.1.2 Define backend (game logic/save-load systems/state management),T16
+T17,Story,T5.2 Implement Data Management,
+S31,Sub-task,S5.2.1 Develop SaveGame module,T17
+S32,Sub-task,S5.2.2 Develop LoadGame module,T17
+S33,Sub-task,S5.2.3 Manage user settings,T17
+T18,Story,T6.1 Follow Development Best Practices,
+T19,Story,T6.2 Conduct Testing,
+S34,Sub-task,S6.2.1 Perform unit testing,T19
+S35,Sub-task,S6.2.2 Perform integration testing,T19
+S36,Sub-task,S6.2.3 Perform user acceptance testing,T19
+T20,Story,T7.1 Plan Distribution,
+S37,Sub-task,S7.1.1 Distribute through digital platforms (itch.io/Steam/Epic Games),T20
+T21,Story,T7.2 Prepare Installation Instructions,
+S38,Sub-task,S7.2.1 Provide clear installation and running instructions,T21
+T22,Story,T8.1 Create User Documentation,
+S39,Sub-task,S8.1.1 Develop guides and instructions for playing the game,T22
+T23,Story,T8.2 Create Developer Documentation,
+S40,Sub-task,S8.2.1 Develop technical documentation for maintaining and extending the game,T23
+
+Issue Id,Issue Type,Summary,Parent,Task ID
+T1,Story,T1.1 Create Main Menu UI,,T-1.1
+S1,Sub-task,S1.1.1 Design layout for starting a new game,T1,S-1.1
+S2,Sub-task,S1.1.2 Design layout for loading a saved game,T1,S-1.2
+S3,Sub-task,S1.1.3 Design layout for accessing settings,T1,S-1.3
+T2,Story,T1.2 Implement New Game Functionality,,T-1.2
+S4,Sub-task,S1.2.1 Create INewGame Class,T2,S-1.2.1
+S5,Sub-task,S1.2.2 Develop functionality to start a new game session,T2,S-1.2.2
+S6,Sub-task,S1.2.3 Load initial game scene,T2,S-1.2.3
+T3,Story,T1.3 Implement Load Game Functionality,,T-1.3
+S7,Sub-task,S1.3.1 Develop functionality to load a previously saved game,T3,S-1.3.1
+T4,Story,T1.4 Develop Options Menu,,T-1.4
+S8,Sub-task,S1.4.1 Create audio settings for adjusting music and sound effects volume,T4,S-1.4.1
+S9,Sub-task,S1.4.2 Create graphics settings for adjusting quality and resolution,T4,S-1.4.2
+S10,Sub-task,S1.4.3 Create control settings for customizing key bindings and control schemes,T4,S-1.4.3
+T5,Story,T2.1 Develop Game State Management,,T-2.1
+S11,Sub-task,S2.1.1 Manage transitions between Menu/basebuilding/tactical layers,T5,S-2.1.1
+T6,Story,T2.2 Develop Menu Layer,,T-2.2
+S12,Sub-task,S2.2.1 Implement menu operations (saving/loading/navigating),T6,S-2.2.1
+T7,Story,T2.3 Develop Command Layer,,T-2.3
+S13,Sub-task,S2.3.1 Implement base upgrade/unit upgrade/strategic actions/and mission selection,T7,S-2.3.1
+T8,Story,T2.4 Develop Tactical Layer,,T-2.4
+S14,Sub-task,S2.4.1 Implement mission management (combat start to end),T8,S-2.4.1
+S15,Sub-task,S2.4.2 Implement friendlies' actions,T8,S-2.4.2
+S16,Sub-task,S2.4.3 Implement enemies' actions,T8,S-2.4.3
+S17,Sub-task,S2.4.3.1 Process unit action selection,S16,S-2.4.3.1
+S18,Sub-task,S2.4.3.2 Deduct action cost,S16,S-2.4.3.2
+S19,Sub-task,S2.4.3.3 Cycle to next unit,S16,S-2.4.3.3
+T9,Story,T3.1 Implement Save Game Functionality,,T-3.1
+S20,Sub-task,S3.1.1 Develop functionality to save the current state of the game to a file,T9,S-3.1.1
+T10,Story,T3.2 Implement Load Game Functionality,,T-3.2
+S21,Sub-task,S3.2.1 Develop functionality to load a saved game state from a file,T10,S-3.2.1
+T11,Story,T4.1 Ensure Game Performance,,T-4.1
+S22,Sub-task,S4.1.1 Optimize game to run smoothly on standard hardware,T11,S-4.1.1
+T12,Story,T4.2 Enhance Usability,,T-4.2
+S23,Sub-task,S4.2.1 Design intuitive user interface,T12,S-4.2.1
+S24,Sub-task,S4.2.2 Provide clear instructions and feedback,T12,S-4.2.2
+T13,Story,T4.3 Ensure Compatibility,,T-4.3
+S25,Sub-task,S4.3.1 Ensure compatibility with Windows 10 and 11,T13,S-4.3.1
+S26,Sub-task,S4.3.2 Plan for compatibility with other OSes (macOS/Linux),T13,S-4.3.2
+T14,Story,T4.4 Ensure Reliability,,T-4.4
+S27,Sub-task,S4.4.1 Implement error handling and meaningful error messages,T14,S-4.4.1
+T15,Story,T4.5 Implement Security Measures,,T-4.5
+S28,Sub-task,S4.5.1 Protect user data and save files against unauthorized access,T15,S-4.5.1
+T16,Story,T5.1 Design System Architecture,,T-5.1
+S29,Sub-task,S5.1.1 Define frontend (UI/scenes/interactions),T16,S-5.1.1
+S30,Sub-task,S5.1.2 Define backend (game logic/save-load systems/state management),T16,S-5.1.2
+T17,Story,T5.2 Implement Data Management,,T-5.2
+S31,Sub-task,S5.2.1 Develop SaveGame module,T17,S-5.2.1
+S32,Sub-task,S5.2.2 Develop LoadGame module,T17,S-5.2.2
+S33,Sub-task,S5.2.3 Manage user settings,T17,S-5.2.3
+T18,Story,T6.1 Follow Development Best Practices,,T-6.1
+T19,Story,T6.2 Conduct Testing,,T-6.2
+S34,Sub-task,S6.2.1 Perform unit testing,T19,S-6.2.1
+S35,Sub-task,S6.2.2 Perform integration testing,T19,S-6.2.2
+S36,Sub-task,S6.2.3 Perform user acceptance testing,T19,S-6.2.3
+T20,Story,T7.1 Plan Distribution,,T-7.1
+S37,Sub-task,S7.1.1 Distribute through digital platforms (itch.io/Steam/Epic Games),T20,S-7.1.1
+T21,Story,T7.2 Prepare Installation Instructions,,T-7.2
+S38,Sub-task,S7.2.1 Provide clear installation and running instructions,T21,S-7.2.1
+T22,Story,T8.1 Create User Documentation,,T-8.1
+S39,Sub-task,S8.1.1 Develop guides and instructions for playing the game,T22,S-8.1.1
+T23,Story,T8.2 Create Developer Documentation,,T-8.2
+S40,Sub-task,S8.2.1 Develop technical documentation for maintaining and extending the game,T23,S-8.2.1
+
+
+
+
+
+The issue with the "KAN" prefix appearing instead of your specified IDs ("T" for tasks and "S" for subtasks) is due to how Jira automatically generates issue keys based on the project's key (in this case, "KAN"). Jira assigns a unique identifier to each issue when it is created, and it doesn't allow you to manually set the issue keys during import.
+
+Here’s a workaround that might help:
+
+Use a Custom Field: Instead of trying to set the Key field (which Jira auto-generates), you could create a custom field (e.g., "Task ID") in Jira where you manually set the T and S IDs. You would then import this custom field with your data.
+
+can you do the custom field please? T- for tasks and S- for subtasks
