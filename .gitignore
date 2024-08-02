@@ -1,5 +1,11 @@
 # This .gitignore file is for Unity projects
 
+# Special Files
+zSquad.sln
+create_structure.sh
+gitShowcase.md
+
+
 # Ignore the following directories
 [Ll]ibrary/
 [Tt]emp/
@@ -33,9 +39,7 @@ ProjectSettings/
 *.lock
 *.directory
 .vsconfig
-zSquad.sln
-create_structure.sh
-gitShowcase.md
+
 
 # Ignore the following folders
 Assets/AssetStoreTools*
