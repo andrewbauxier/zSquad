@@ -1,9 +1,7 @@
 # zSquad
 
-`zSquad` is a turn-based tactical strategy game inspired by the XCOM series. Players control a squad
-of soldiers in a fight against zombies, managing resources, customizing their team, and engaging in
-strategic combat. This demo showcases the software development skills and aims to secure funding for
-a more complete game. Note that progression and storyline are not included in this demo.
+`zSquad` is a turn-based tactical strategy game inspired by games of the same genre. Players control a squad
+of soldiers attempting to make it to safety in an apocalyptic world inhabited by zombies. key gameplay aspects include turn-based tactical combat, character and skill progression, and base management.
 
 ## Table of Contents
 
